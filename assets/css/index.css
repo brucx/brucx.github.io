@@ -1,0 +1,523 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+    display: block
+}
+
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden], template {
+    display: none
+}
+
+a {
+    background-color: transparent
+}
+
+a:active, a:hover {
+    outline: 0
+}
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+b, strong {
+    font-weight: 700
+}
+
+dfn {
+    font-style: italic
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -.5em
+}
+
+sub {
+    bottom: -.25em
+}
+
+img {
+    border: 0
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0
+}
+
+pre {
+    overflow: auto
+}
+
+code, kbd, pre, samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0
+}
+
+button {
+    overflow: visible
+}
+
+button, select {
+    text-transform: none
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+button[disabled], html input[disabled] {
+    cursor: default
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+input {
+    line-height: normal
+}
+
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+input[type=search] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto
+}
+
+optgroup {
+    font-weight: 700
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td, th {
+    padding: 0
+}
+
+.hidden {
+    display: none !important
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
+}
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto
+}
+
+.invisible {
+    visibility: hidden
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table
+}
+
+.clearfix {
+    clear: both
+}
+
+body, html {
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    height: 100%;
+    user-select: none
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+    width: 100%
+}
+
+#stars {
+    height: 99%;
+    width: 100%
+}
+
+.no-js #js-warnning {
+    background: rgba(255, 255, 255, 0.3);
+    display: block;
+    font-size: 1rem;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.no-js #js-warnning h1 {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 5px 0 5px 0;
+}
+
+.no-js #js-warnning h1 a {
+    color: #fff
+}
+
+.no-js #js-warnning h1 a:hover {
+    text-decoration: none
+}
+
+#js-warnning {
+    display: none
+}
+
+header {
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+header h1 {
+    animation-delay: 0s, .333s;
+    animation-duration: .333s, 3.333s;
+    animation-name: hideMeForWhile, fadeInUp;
+    font-size: 3rem;
+    margin: 0 0 5px 0;
+}
+
+header h1 a {
+    color: inherit;
+    font-weight: 400;
+    text-decoration: none;
+    transition: .666s color;
+}
+
+header h1 a:hover, header h1 a:focus {
+    color: rgba(66, 130, 246, 0.75);
+    transition: 1.666s color
+}
+
+header h2 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+header h2 span {
+    animation-delay: 1.666s;
+    animation-duration: .999s;
+    animation-fill-mode: forwards;
+    animation-name: fadeInBorder;
+    border-top: 1px solid rgba(255, 255, 255, 0);
+    display: inline-block;
+    padding: 5px 0 0 0;
+}
+
+header h2 span a {
+    color: inherit;
+    animation-play-state: paused;
+}
+
+header h2 span a:hover {
+    animation-name: flash;
+    animation-duration: .999s;
+    animation-play-state: running
+}
+
+section {
+    margin: 30px 0 0 0;
+}
+
+section div {
+    display: inline-block;
+    width: 300px;
+}
+
+section div a {
+    /*background: url("../image/Icons_W.png") no-repeat;*/
+    /*background-size: auto 100%;*/
+    display: inline-block;
+    height: 50px;
+    margin: 10px;
+    width: 50px;
+    color: #ffffff;
+}
+
+section div a#github {
+    background-position: -142px 0
+}
+
+section div a#css-tricks {
+    background-position: 0 0
+}
+
+section div a#frontend-notebook {
+    background-position: -213px 0
+}
+
+section div a#email {
+    background-position: -71px 0
+}
+
+footer {
+    bottom: 15px;
+    color: rgba(255, 255, 255, 0.5);
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0
+}
+
+@-moz-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0)
+    }
+    100% {
+        opacity: 1;
+        transform: none
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0)
+    }
+    100% {
+        opacity: 1;
+        transform: none
+    }
+}
+
+@-o-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0)
+    }
+    100% {
+        opacity: 1;
+        transform: none
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0)
+    }
+    100% {
+        opacity: 1;
+        transform: none
+    }
+}
+
+@-moz-keyframes fadeInBorder {
+    0% {
+        border-top: 1px solid rgba(255, 255, 255, 0)
+    }
+    100% {
+        border-top: 1px solid rgba(255, 255, 255, 0.5)
+    }
+}
+
+@-webkit-keyframes fadeInBorder {
+    0% {
+        border-top: 1px solid rgba(255, 255, 255, 0)
+    }
+    100% {
+        border-top: 1px solid rgba(255, 255, 255, 0.5)
+    }
+}
+
+@-o-keyframes fadeInBorder {
+    0% {
+        border-top: 1px solid rgba(255, 255, 255, 0)
+    }
+    100% {
+        border-top: 1px solid rgba(255, 255, 255, 0.5)
+    }
+}
+
+@keyframes fadeInBorder {
+    0% {
+        border-top: 1px solid rgba(255, 255, 255, 0)
+    }
+    100% {
+        border-top: 1px solid rgba(255, 255, 255, 0.5)
+    }
+}
+
+@-moz-keyframes hideMeForWhile {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes hideMeForWhile {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-o-keyframes hideMeForWhile {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes hideMeForWhile {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-moz-keyframes flash {
+    0%, 50%, 100% {
+        opacity: 1
+    }
+    25%, 75% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes flash {
+    0%, 50%, 100% {
+        opacity: 1
+    }
+    25%, 75% {
+        opacity: 0
+    }
+}
+
+@-o-keyframes flash {
+    0%, 50%, 100% {
+        opacity: 1
+    }
+    25%, 75% {
+        opacity: 0
+    }
+}
+
+@keyframes flash {
+    0%, 50%, 100% {
+        opacity: 1
+    }
+    25%, 75% {
+        opacity: 0
+    }
+}
